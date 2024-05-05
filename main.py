@@ -120,13 +120,13 @@ def get_response(user_input):
   return response['answer']
 
 
-# app config
-def logout_button():
-  st.query_params.key = "login"
-  st.session_state['logout'] = True
-  st.session_state['name'] = None
-  st.session_state['username'] = None
-  st.session_state['authentication_status'] = None
+# # app config
+# def logout_button():
+#   st.query_params.key = "login"
+#   st.session_state['logout'] = True
+#   st.session_state['name'] = None
+#   st.session_state['username'] = None
+#   st.session_state['authentication_status'] = None
   # st.session_state['app_page'] = None
 
 
