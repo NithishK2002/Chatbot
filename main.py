@@ -127,12 +127,12 @@ def logout_button():
   st.session_state['name'] = None
   st.session_state['username'] = None
   st.session_state['authentication_status'] = None
-  st.session_state['app_page'] = None
+  # st.session_state['app_page'] = None
 
 
 def chatBot():
   try:
-    st.session_state['app_page'] = True
+    # st.session_state['app_page'] = True
     username = st.session_state['name']
     # username = "nithish"
     username = username.capitalize()
@@ -233,6 +233,11 @@ def logout_button():
     st.session_state['name'] = None
     st.session_state['username'] = None
     st.session_state['authentication_status'] = None
+    if 'chat_history' in st.session_state:
+        del st.session_state['chat_history']
+    if 'vector_store' in st.session_state:
+        del st.session_state['vector_store']
+
     # st.rerun()
 
 def app():
@@ -243,7 +248,7 @@ def app():
     #                   })
     # st.title("Government Infobot")
     # st.write("Welcome to the Government Infobot")
-    
+    # st.rerun()
     chatBot()
 
 def login():
@@ -282,10 +287,10 @@ def main():
         st.session_state['name'] = None
         st.session_state['username'] = None
         st.session_state['authentication_status'] = None
-        st.session_state['app_page'] = None
+        # st.session_state['app_page'] = None
     page = st.query_params["key"]
     print(page)
-    if page == "login" and st.session_state['authentication_status'] == None and st.session_state['app_page'] == None:
+    if page == "login" and st.session_state['authentication_status'] == None:
         login()
     elif page == "register":
         register()

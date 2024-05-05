@@ -10,8 +10,14 @@ credentials:
       logged_in: false
       name: John Smith
       password: $2b$12$VRoMybHM59H8TNI.h0/qh./QTbRPnl/w/w/SzshUL5iuHt9vZA4DC
+    kanna:
+      email: kanna@gmail.com
+      logged_in: false
+      name: kanna
+      password: $2b$12$Nq63ps8fUzNSHGgQkTt/feXGPn6rYcxb4DkmSj6J.EIMDujjMeuRS
     nithish:
       email: nithish@gmail.com
+      failed_login_attempts: 0
       logged_in: false
       name: nithish
       password: $2b$12$x6YIJjq01GIvhRs0MbQCm.3AdZWYU06N0HMEsqUvluHUyPStr2q1e
