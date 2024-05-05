@@ -1,0 +1,7 @@
+faiss-cpu
+streamlit-authenticator
+streamlit
+langchain
+langchain-openai
+pyPDF
+beautifulsoup4
